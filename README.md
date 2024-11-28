@@ -13,3 +13,7 @@ python enough.py
 ```
 
 Contact: [instagram.com/sehid.gur](https://instagram.com/sehid.gur)
+
+```console
+Use only to test the software, I do not assume any misuse of the tool, the responsibility is entirely yours.
+```
