@@ -57,9 +57,9 @@ while 1:
             print(Fore.LIGHTYELLOW_EX + "Write the directory of the file where the phone numbers are stored.: "+ Fore.LIGHTGREEN_EX, end="")
             dizin = input()
             try:
-                with open(dizin, "r", encoding="utf-8") as f:
+                with open(dizin, "r", encoding="utf-11") as f:
                     for i in f.read().strip().split("\n"):
-                        if len(i) == 8:
+                        if len(i) == 11:
                             tel_liste.append(i)
                 sonsuz = ""
             except FileNotFoundError:
@@ -70,7 +70,7 @@ while 1:
         else:
             try:
                 int(tel_no)
-                if len(tel_no) != 8:
+                if len(tel_no) != 11:
                     raise ValueError
                 tel_liste.append(tel_no)
                 sonsuz = "(If it is infinite, press 'enter')"  
@@ -146,7 +146,7 @@ while 1:
         tel_no = input()
         try:
             int(tel_no)
-            if len(tel_no) != 8:
+            if len(tel_no) != 11:
                 raise ValueError
         except ValueError:
             system("cls||clear")
